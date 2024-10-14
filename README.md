@@ -24,6 +24,9 @@ mlflow demo
 
 - **Install Packages**:
 
+  - Create Conda Environment and Activate it
+    - **conda create --name mlflowenv python=3.13.0**
+    - **conda activae mlflowenv**
   - Install Required Packages (if not already installed):
     - e.g.: pip install scikit-learn
   - Setting up Mlflow Tracking Server:
