@@ -1,0 +1,17 @@
+name: "wine-classifier"
+
+conda_env: conda_env.yaml
+
+entry_points:
+  log_regression:
+    parameters:
+      inverse_of_regularization_strength:
+        type: float
+        default: 1.0
+      max_iterations:
+        type: int
+        default: 100
+      random_state:
+        type: int
+        default: 42
+    command: "python main.py --C={inverse_of_regularization_strength} --max_iter={max_iterations} --random_state={random_state}"
